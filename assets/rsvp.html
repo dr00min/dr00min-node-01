@@ -1,0 +1,269 @@
+ 
+<!DOCTYPE html>
+<html ng-app="apps" xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr" xmlns:og="https://opengraphprotocol.org/schema/">
+<head>
+        <title>RSVP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        
+        <meta property="og:url"           content="http://default-test.webcentral.eu/rsvp.html" />
+    	<meta property="og:type"          content="website" />
+    	<meta property="og:title"         content="RSVP" />
+    	<meta property="og:description"   content="undefined" />
+    	<meta property="og:image"         content="http://default-test.webcentral.eu/" />
+    	<link rel="shortcut icon" href="/img/favicon_nedco.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://email.webdo.com/cdn/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://builder.webdo.com/fonts/oldfonts.css">
+        <link rel="stylesheet" href="https://blog.webcentral.eu/css/headerfonts.css">
+        <link rel="stylesheet" href="https://cdn.webcentral.eu/builder/css/oldfonts.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.webcentral.eu/builder/css/webbuild.css">
+        <script src="https://email.webdo.com/cdn/jquery/js/jquery.min.js"></script>
+        <script src="https://email.webdo.com/cdn/bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="custom.css">
+        <script src="https://cdn.webcentral.eu/angular/v15/angular.min.js"></script>
+	    <script src="https://cdn.webcentral.eu/webapps/microdata.js"></script>
+        <script src="https://cdn.webcentral.eu/scripts/datablocks.js"></script>
+        <style>
+                #pagehtml h1 {
+                    color: #313131;
+                    font-family: Arial;
+                }
+                #pagehtml h2 {
+                    color: #313131;
+                    font-family: Arial;
+                }
+                #pagehtml h3 {
+                    color: #313131;
+                    font-family: Arial;
+                }
+                #pagehtml h4 {
+                    color: #313131;
+                    font-family: Arial;
+                }
+                #pagehtml h5 {
+                    color: #313131;
+                    font-family: Arial;
+                }
+                #pagehtml h6 {
+                    color: #313131;
+                    font-family: Arial;
+                }
+                #pagehtml p {
+                    color: #313131;
+                    font-family: Andada;
+                    font-size: 16px;
+                }
+            </style>
+
+        
+        
+        
+</head>
+
+
+<body style = "background-image:url('img/when_img.jpg'); background-size:100%;background-repeat:no-repeat;">
+    <div id="xmsspacer" class="spacer"></div>
+    <div class="container-fluid"><div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10"  style="padding-left:0px; padding-right:0px; ">
+            <nav class="navbar navbar-default " id="navbar" style="border-style: none; background-color:rgba(255,255,255,0.75);">
+            	  <div class="container-fluid" id="headercnt" 
+            	    style="color:#624863;border-width: 1px; border-bottom: 1px white; border-bottom-style: none;" ><br>
+            		<div class="navbar-header">
+            		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+            		  data-target="#header-navbar" aria-expanded="true">
+            		    <span class="sr-only">Toggle navigation</span>
+            		    <span class="icon-bar"></span>
+            		    <span class="icon-bar"></span>
+            		    <span class="icon-bar"></span>
+            		  </button>
+            		 <div class="navheader">
+                		  &nbsp;&nbsp;
+                		  <a href="/index.html">
+                		    <img class="bloglogo" src="img/invisible.png" style="position:relative;top: -15px;"
+                		        height="70" width="70">
+                		  </a>
+                		  &nbsp;&nbsp;&nbsp;<span id="headertitle" style="font-size:35px;
+                		  font-family:Arial">
+                		  LOGO</span>
+            		 </div>
+            		</div>
+            		<div class="collapse navbar-collapse" id="header-navbar">
+            		  <ul class="nav navbar-nav navbar-right navbarmenu">
+            		    
+                            <li>
+                                <a class="wb-menulink" href="index.html" style="color:#624863"><i class="glyphicon glyphicon-home"></i>&nbsp;Home</a>
+                            </li>
+                            <li>
+                                <a class="wb-menulink" href="about.html" style="color:#624863"><i class="isz ion-android-hangout"></i>&nbsp;About</a>
+                            </li>
+                            <li>
+                                <a class="wb-menulink" href="gallery.html" style="color:#624863"><i class="isz ion-images"></i>&nbsp;Gallery</a>
+                            </li>
+                            <li>
+                                <a class="wb-menulink" href="rsvp.html" style="color:#624863"><i class="isz ion-document-text"></i>&nbsp;RSVP</a>
+                            </li>
+
+            		  </ul>
+            		</div>
+            	  </div>
+            </nav><script>
+  $(document).ready(function(){
+     var scroll_start = $(this).scrollTop();
+     function checkSize(){if ($(".ckmedia").css("float")=="none"){return true} else {return false}}
+     var ismobile = checkSize()
+     var cntck = -1
+     var ww = $( window ).width();
+     if(ww<766){$("#headertitle").css({"font-size":"20px"})}
+  });
+</script>
+
+
+            <div id="pagehtml" class="padwide cnav container-fluid containerVertical pagecontent" style="background-color:rgba(255,255,255,0);">
+            
+<!-- Start Page WebBuilder - page builder.webdo.com -->
+
+<div class="wd-block-wrap " ><div class="row ">
+      <div class="col-md-12">
+            <br><br>
+      </div>
+</div></div>
+<div class="wd-block-wrap " ><div class="row "><div class="col-md-12">
+            <p style="color: rgb(236, 236, 236); font-size: 40px;" align="center"><b>RSVP</b></p>
+      </div>
+      <script>if(!$("#xmsspacer").hasClass("spacer")){$("body" ).before('<div class="spacer" id="xmsspacer"></div>')}</script></div></div>
+<div class="wd-block-wrap " ><div class="row ">
+      <div class="col-md-12">
+            <br><br>
+      </div>
+</div></div>
+<div class="wd-block-wrap " ><div class="row "><div class="row conferenceblock">
+    
+    
+		<div class="col-md-12 center">
+			<div class="display">
+				<h1 style="font-size: 3.5em"><br></h1><h1 style="font-size: 3.5em">Contact Us</h1><div><br></div><div><br></div>
+			</div>
+		</div>
+		<div class="col-md-12" style="padding-left:30px;">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+				dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+				book. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel.
+				</p><br>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+				dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+				book. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel.
+				</p><br>	
+				</div><p><br></p>
+		<div class="col-md-6" style="padding-left:30px;">
+			<h3>Address</h3>
+			<p>
+				<strong>Company, Inc.</strong><br> 123 Street, City<br> State 12345<br> P: (123) 456 7890 / 456 7891
+			</p></div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12" style="padding-left:30px;">
+					<h3>Stay in Touch</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<div class="clearfix is-boxed-button-medium2">
+						<a href="https://twitter.com/" style="background-color: #00bfff;"><i class="icon ion-social-twitter"></i></a>
+						<a href="https://facebook.com/" style="background-color: #128BDB;"><i class="icon ion-social-facebook"></i></a>
+						<a href="mailto:you@example.com" style="background-color: #ff69B4;"><i class="icon ion-ios-email-outline"></i></a>
+					</div>
+				</div>
+            </div>
+	<div class="col-md-12"><p><br></p></div>
+    </div></div></div></div>
+<div class="wd-block-wrap " ><div class="row ">
+      <div class="col-md-12">
+            <br><br>
+      </div>
+</div></div>
+<div class="wd-block-wrap " ><div class="row ">
+    <div class="col-md-12">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe scrolling="no" marginheight="0" marginwidth="0" class="mg1" src="https://maps.google.com/maps?q=Melbourne,+Victoria,+Australia&amp;hl=en&amp;sll=-7.981898,112.626504&amp;sspn=0.009084,0.016512&amp;oq=melbourne&amp;hnear=Melbourne+Victoria,+Australia&amp;t=m&amp;z=10&amp;output=embed" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+    </div>
+</div></div>
+<div class="wd-block-wrap " ><div class="row ">
+      <div class="col-md-12">
+            <hr>
+      </div>
+</div></div>
+<div class="wd-block-wrap " ><div class="row ">
+      <div class="col-md-12">
+            <br><br>
+      </div>
+</div></div>
+<div class="wd-block-wrap " ><div class="row "><section-allpages id="footer"><br>
+<footer>
+<div class="bottominfo">
+     <div class="row" style="padding-right: 60px; padding-left: 60px;">
+         <div class="col-md-4" id="">
+             <p style="font-size: 28px;">Logo here</p>
+             <p>Privacy policy</p>
+             <p>© WebDo</p>
+         </div>
+         <div class="col-md-4" id="">
+             <div class="row">
+                 <p>&nbsp;&nbsp;&nbsp; <span style="font-size: 20px;">Menu</span></p>
+                 <div class="col-md-6">
+                    <p>About</p>
+                    
+                    <p>Services</p>
+                 </div>
+                 <div class="col-md-6">
+                    <p>News</p>
+                    <p>Press</p>
+                    <p><br></p>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-4" id="">
+             <p><span style="font-size: 20px;">Contact</span></p>
+             <p>+1 123 123-1234 Info@webdo.com</p>
+         </div>
+     </div>
+</div>    
+<div class="bottominfo">
+    <div class="row" style="padding-right: 60px; padding-left: 60px;">
+        <hr>
+        <p style="color:black; font-size:20px" align="center">
+                    <i class="isz ion-social-facebook social-footer"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="isz ion-social-twitter social-footer"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="isz ion-social-instagram social-footer"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="isz ion-social-youtube social-footer"></i>&nbsp;&nbsp;&nbsp;&nbsp; <br><span style="font-size: 16px;">
+                    
+         </span></p>    
+    </div>
+</div>
+</footer>
+</section-allpages></div></div>
+<!-- End Page WebBuilder - page builder.webdo.com -->
+            </div>
+            
+            
+        </div>
+        <div class="col-md-1"></div>
+    </div></div>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+        
+
+    
+
+</body>
+
+
+</html>
